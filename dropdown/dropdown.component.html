@@ -1,0 +1,18 @@
+<div class="container">
+<div class="card">
+    <h1>XYZ corp</h1>
+    <p class="title">Digi mark</p>
+    <p>Select a user</p>
+    <ng-select [items]="name"
+  bindLabel="first_name"
+  class="form-control"
+  bindValue="id"
+  [(ngModel)]="selectedCityId">
+  </ng-select>
+  <div>
+    <button  [routerLink]="['/user-detail', selectedCityId]" >next</button>
+  </div>
+  </div>
+</div>
+
+ 
